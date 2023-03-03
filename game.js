@@ -209,7 +209,7 @@ const bird = {
           return true;
         }
       } else if (pipe.moved) {
-        UI.score.curr+=10;
+        UI.score.curr-=10;
         SFX.score.play();
         pipe.moved = false;
       }
